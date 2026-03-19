@@ -3,138 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="LanternFox Games is an indie game studio behind Double Up, a quick and satisfying number tile merge challenge."
-    />
-    <title>LanternFox Games | Double Up</title>
+    <meta name="description" content="LanternFox Games makes small, focused puzzle games. Double Up — slide, merge, and double your way to a new high score." />
+    <title>LanternFox Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="page page-home">
-    <a class="skip-link" href="#main-content">Skip to content</a>
+  <body class="page-home">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="home-header">
-      <div class="home-floating-links" aria-label="Primary">
-        <a href="#double-up">Double Up</a>
-        <a href="#studio-story">Story</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </div>
+    <header class="site-header" id="site-header">
+      <nav class="nav-pill" aria-label="Main navigation">
+        <a href="index.html" class="nav-home" aria-label="LanternFox Games home">
+          <img src="images/lfgLogo.png" alt="LanternFox Games" class="nav-logo-img" />
+        </a>
+        <div class="nav-links">
+          <a href="#double-up" class="nav-link">Double Up</a>
+          <a href="#studio-story" class="nav-link">Studio</a>
+          <a href="privacy.html" class="nav-link">Privacy</a>
+          <a href="terms.html" class="nav-link">Terms</a>
+        </div>
+      </nav>
     </header>
 
-    <main id="main-content">
-      <section class="logo-stage">
-        <a class="center-brand" href="index.html" aria-label="LanternFox Games home">
-          <img src="images/lfgLogo.png" alt="LanternFox Games logo" />
-        </a>
-        <p class="logo-tagline">LanternFox Games</p>
-        <p class="logo-subline">An indie studio crafting focused puzzle games with modern feel.</p>
-      </section>
+    <main id="main">
 
-      <section class="hero-section">
-        <div class="hero-copy">
-          <p class="eyebrow">Indie Mobile Studio</p>
-          <h1>Retro soul.<br />Modern clarity.<br />One more run.</h1>
-          <p>
-            We build games around readable systems, immediate flow, and satisfying mastery.
-            Every release aims to feel timeless at a glance and fresh in your hands.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#double-up">Explore Double Up</a>
-            <a class="button button-ghost" href="#studio-story">Our Story</a>
+      <!-- ═══ HERO ═══ -->
+      <section class="hero" id="hero" aria-label="Welcome to LanternFox Games">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <div class="atm-glow atm-glow-1"></div>
+          <div class="atm-glow atm-glow-2"></div>
+        </div>
+        <div class="hero-dots" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <div class="logo-stage">
+            <div class="logo-halo"></div>
+            <img src="images/lfgLogo.png" alt="LanternFox Games logo" class="hero-logo" />
+          </div>
+          <p class="studio-label">LanternFox Games</p>
+          <h1 class="hero-headline">One more<br /><em>game.</em></h1>
+          <p class="hero-sub">We make small, focused puzzle games for people who know what they like.</p>
+          <div class="hero-cta">
+            <a href="#double-up" class="btn-primary">See Double Up</a>
+            <a href="#studio-story" class="btn-ghost">Our story</a>
           </div>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="tile-grid">
-            <span class="tile">2</span>
-            <span class="tile">4</span>
-            <span class="tile">8</span>
-            <span class="tile">16</span>
-            <span class="tile">32</span>
-            <span class="tile">64</span>
+
+        <div class="scroll-beacon" aria-hidden="true">
+          <div class="scroll-track"></div>
+        </div>
+      </section>
+
+      <!-- ═══ DOUBLE UP SHOWCASE ═══ -->
+      <section class="showcase" id="double-up" aria-label="Double Up — the game">
+        <div class="section-rule" aria-hidden="true"></div>
+        <div class="showcase-inner">
+
+          <div class="showcase-copy reveal">
+            <span class="eyebrow">The game</span>
+            <h2 class="section-headline">Double Up</h2>
+            <p class="section-body">A number merge puzzle built for the satisfying click of a clean run. Slide tiles, combine matching numbers, and watch your score climb. Easy to understand — hard to put down.</p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-mark" aria-hidden="true">◆</span>
+                <div class="feature-text">
+                  <strong>Pure mechanics.</strong> No story, no characters, no systems to manage. Just numbers and decisions.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-mark" aria-hidden="true">◆</span>
+                <div class="feature-text">
+                  <strong>Quick sessions.</strong> A run takes minutes. The high score chase does not.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-mark" aria-hidden="true">◆</span>
+                <div class="feature-text">
+                  <strong>Real feedback.</strong> Every merge clicks. Every combo earns it.
+                </div>
+              </li>
+            </ul>
+
+            <div class="store-row">
+              <span class="store-badge">Coming to the App Store</span>
+            </div>
+          </div>
+
+          <div class="showcase-board reveal" aria-hidden="true">
+            <div class="board-frame">
+              <div class="board-grid">
+                <div class="tile t2">2</div>
+                <div class="tile t4">4</div>
+                <div class="tile t8">8</div>
+                <div class="tile t-empty"></div>
+                <div class="tile t16">16</div>
+                <div class="tile t32">32</div>
+                <div class="tile t-empty"></div>
+                <div class="tile t-empty"></div>
+                <div class="tile t-empty"></div>
+                <div class="tile t64">64</div>
+                <div class="tile t128">128</div>
+                <div class="tile t-empty"></div>
+                <div class="tile t-empty"></div>
+                <div class="tile t-empty"></div>
+                <div class="tile t256">256</div>
+                <div class="tile t512">512</div>
+              </div>
+            </div>
+            <p class="board-label">Slide · Merge · Double</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══ STUDIO STORY ═══ -->
+      <section class="studio" id="studio-story" aria-label="About LanternFox Games">
+        <div class="section-rule" aria-hidden="true"></div>
+        <div class="studio-inner">
+
+          <div class="studio-header reveal">
+            <span class="eyebrow">The studio</span>
+            <h2 class="section-headline">Built on arcade instincts</h2>
+          </div>
+
+          <div class="studio-layout">
+            <div class="studio-prose reveal">
+              <p>LanternFox Games is a small indie studio with a simple belief: the best games respect your time and reward your attention.</p>
+              <p>We grew up on the kind of games that pulled you in with a simple idea and kept you there with invisible depth. Double Up is our first release — a number merge puzzle built to be picked up in thirty seconds and played for an hour.</p>
+              <p>We prototype quickly, tune relentlessly, and ship only when it feels right. No filler. No roadmap theater.</p>
+            </div>
+
+            <div class="pillars">
+              <div class="pillar reveal">
+                <span class="pillar-index" aria-hidden="true">01</span>
+                <h3 class="pillar-title">What we chase</h3>
+                <p class="pillar-body">Tight mechanics, clear feedback, and systems that reward careful play without punishing curiosity.</p>
+              </div>
+              <div class="pillar reveal">
+                <span class="pillar-index" aria-hidden="true">02</span>
+                <h3 class="pillar-title">How we build</h3>
+                <p class="pillar-body">Small team, high craft. We cut features freely and tune obsessively. Simplicity is a design choice, not a shortcut.</p>
+              </div>
+              <div class="pillar reveal">
+                <span class="pillar-index" aria-hidden="true">03</span>
+                <h3 class="pillar-title">What's next</h3>
+                <p class="pillar-body">Double Up updates and new puzzle concepts in quiet development. Stay tuned.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══ LEGAL BAND ═══ -->
+      <section class="legal-band" aria-label="Policies">
+        <div class="legal-inner">
+          <p class="legal-text">Simple, honest policies.</p>
+          <div class="legal-links">
+            <a href="privacy.html" class="legal-link">Privacy Policy</a>
+            <span aria-hidden="true" class="legal-sep">·</span>
+            <a href="terms.html" class="legal-link">Terms of Service</a>
           </div>
         </div>
       </section>
 
-      <section class="feature-ribbon" aria-label="Studio values">
-        <p>Design-first puzzle loops</p>
-        <p>Fast sessions with depth</p>
-        <p>Clear visuals and responsive controls</p>
-      </section>
-
-      <section id="double-up" class="content-block showcase">
-        <div class="section-heading showcase-copy">
-          <h2>Double Up</h2>
-          <p>
-            A pure number merge challenge built for quick sessions and long score chases.
-            Slide, combine, and climb with every decision.
-          </p>
-          <div class="platform-row" aria-label="Supported platforms">
-            <span>iOS</span>
-            <span>App Store</span>
-            <span>Mobile</span>
-          </div>
-        </div>
-        <div class="showcase-art soft-panel" aria-hidden="true">
-          <div class="showcase-grid">
-            <span>2</span>
-            <span>4</span>
-            <span>8</span>
-            <span>16</span>
-            <span>32</span>
-            <span>64</span>
-            <span>128</span>
-            <span>256</span>
-            <span>512</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="studio-story" class="content-block story-block">
-        <p class="eyebrow">Studio Story</p>
-        <h2>Built in the spirit of classic arcade thinking.</h2>
-        <p>
-          LanternFox Games started with a simple goal: make elegant games you can understand in
-          seconds and refine for months. We care about game feel, visual language, and rules
-          that stay fun under pressure.
-        </p>
-      </section>
-
-      <section class="content-block snapshot-grid">
-        <article>
-          <h3>What We Chase</h3>
-          <p>Tight mechanics, clear feedback, and systems that reward smart play.</p>
-        </article>
-        <article>
-          <h3>How We Build</h3>
-          <p>Prototype quickly, tune relentlessly, and ship only when it feels right.</p>
-        </article>
-        <article>
-          <h3>What is Next</h3>
-          <p>Double Up updates and future puzzle-first projects from LanternFox Games.</p>
-        </article>
-      </section>
-
-      <section class="content-block legal-callout soft-panel">
-        <h2>Trust and Transparency</h2>
-        <p>
-          We keep policies clear so players know exactly how Double Up handles privacy,
-          purchases, and platform behavior.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="privacy.html">Read Privacy Policy</a>
-          <a class="button button-ghost" href="terms.html">Read Terms of Service</a>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> LanternFox Games. All rights reserved.</p>
-      <p class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <span>Contact: legal@lanternfoxgames.com (placeholder)</span>
-      </p>
+      <div class="footer-inner">
+        <span class="footer-copy">© <span id="year"></span> LanternFox Games</span>
+        <nav class="footer-nav" aria-label="Footer links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="mailto:legal@lanternfoxgames.com">Contact</a>
+        </nav>
+      </div>
     </footer>
 
     <script src="script.js"></script>
